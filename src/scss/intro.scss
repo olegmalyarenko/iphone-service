@@ -1,0 +1,23 @@
+.intro {
+    height: 200px;
+    text-align: center;
+    background: url(../assets/images/big-dot.png) repeat-x bottom left;
+}   
+
+.main_title {
+    margin: 0 0 18px;
+    font: 500 50px/60px 'Oswald', sans-serif;
+    text-transform: uppercase;
+    color: #222;
+}
+.main_descr {
+    margin: 0;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 300;
+}
+
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
