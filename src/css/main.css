@@ -3361,5 +3361,15 @@ form button[type="submit"]:disabled:hover {
     width: 280px;
   }
 }
+.site_body{
+  margin-top: 30px;
+}
+
+.section_descr{
+  text-align: center;
+    margin-top: -15px;
+    color: white;
+}
+
 
 /**************************** /RESPONSIVE ***********************/
