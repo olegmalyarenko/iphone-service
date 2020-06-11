@@ -3447,7 +3447,7 @@ form button[type="submit"]:disabled:hover {
 
 .overlay {
   position: fixed;
-  background: #2a3140;
+  background: linear-gradient(to right, #34987e 0%,#03577e 100%);
   top: 0;
   right: 0;
   width: 100%;
@@ -3492,7 +3492,7 @@ form button[type="submit"]:disabled:hover {
   position: absolute;
   text-align: right;
   right: 10vw;
-  bottom: 10vw;
+  bottom: 30vw;
 }
 .overlayMenu ul {
       list-style: none;
