@@ -2883,6 +2883,10 @@ form button[type="submit"]:disabled:hover {
     margin-bottom: 10px;
   }
 
+  .section_intro .intro_content {
+    text-align: center;
+  }
+
   .section_shop,
   .section_price,
   .section_courier,
@@ -3373,7 +3377,14 @@ form button[type="submit"]:disabled:hover {
   padding-right: 5%;
   padding-left: 5%;
 }
+.title,
+.text{
+  padding-left: 20px
+}
 
+.copy {
+  margin: 0 auto;
+}
 
 
 /**************************** /RESPONSIVE ***********************/
