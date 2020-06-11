@@ -2700,7 +2700,6 @@ form button[type="submit"]:disabled:hover {
   .section_advantages .adv_list,
   .section_courier .courier_steps,
   .section_contacts,
-  .site_footer .footer_info_frame,
   .site_footer .footer_meta {
     padding-right: 0;
     padding-left: 0;
@@ -3370,6 +3369,11 @@ form button[type="submit"]:disabled:hover {
     margin-top: -15px;
     color: white;
 }
+.footer_info_frame {
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
 
 
 /**************************** /RESPONSIVE ***********************/
