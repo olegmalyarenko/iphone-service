@@ -141,6 +141,23 @@
 								</a>
 							</li>
 						</ul>
+
+
+		<!---->				
+<div class="overlay">
+    <nav class="overlayMenu">  
+        <ul role="menu">
+            <li><a href="#" role="menuitem">Parity</a></li>
+            <li><a href="#" role="menuitem">Abstract</a></li>
+            <li><a href="#" role="menuitem">Educated</a></li>
+            <li><a href="#" role="menuitem">Decorum</a></li>
+            <li><a href="#" role="menuitem">Tenuous</a></li>
+        </ul>
+    </nav>
+</div>
+
+<div class="navBurger" role="navigation" id="navToggle"></div> 
+<!---->
 					</nav> <!-- /.nav_bar -->
 				</div>
 			</div> <!-- /.site_nav -->
@@ -791,7 +808,15 @@
 		<script type="text/javascript" src="js/owl.carousel.min.js"></script>
 		<script type="text/javascript" src="js/pxgradient-1.0.1.jquery.js"></script>
 		<script type="text/javascript" src="js/aos.js"></script>
-		--->
+		<script> 
+		$("#navToggle").click(function() {
+    $(this).toggleClass("active");
+    $(".overlay").toggleClass("open");
+    // this line ▼ prevents content scroll-behind
+    $("body").toggleClass("locked"); 
+});
+
+		</script>
 		
 	</body>
 </html>
