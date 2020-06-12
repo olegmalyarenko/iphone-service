@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>MobileHelp</title>
+		<title>Iphone Service</title>
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/owl.carousel.min.css">
 		<link rel="stylesheet" href="css/owl.theme.default.min.css">
@@ -150,11 +150,10 @@
 <div class="overlay">
     <nav class="overlayMenu">  
         <ul role="menu">
-            <li><a href="#" role="menuitem">Parity</a></li>
-            <li><a href="#" role="menuitem">Abstract</a></li>
-            <li><a href="#" role="menuitem">Educated</a></li>
-            <li><a href="#" role="menuitem">Decorum</a></li>
-            <li><a href="#" role="menuitem">Tenuous</a></li>
+            <li><a class="mobile-menu" href="#price" role="menuitem">Цены</a></li>
+            <li><a class="mobile-menu" href="#advantages" role="menuitem">Преимущества</a></li>
+            <li><a class="mobile-menu" href="#contacts" role="menuitem">Контакты</a></li>
+            
         </ul>
     </nav>
 </div>
@@ -272,7 +271,7 @@
 					</div> <!-- /.callback_block -->
 				</div>
 			</section> <!-- /.section_intro -->
-			<section class="section_shop" id="shop">
+			<section name="price" class="section_shop" id="price">
 				<div class="bg_skew2"></div>
 				<div class="bg_skew3"></div>
 				<div class="shop_content">
@@ -294,28 +293,28 @@
 	<li class="vendors_tabs_li"><a href="#vendors_tab2">10 XR/ XS</a></li>
 </ul></caption>
 <tr>
-  <th>Plan</th>
-  <th colspan="2">Price</th>
+  <th>Услуги</th>
+  <th colspan="2">Цены</th>
 </tr>
 <tr>
-  <td>Basic</td>
-  <td>10$</td>
-  <td><a>Select</a></td>
+  <td>Замена динамика (полифонического)</td>
+  <td>10р</td>
+  <td><a data-fancybox data-options='{"src": "#popup_callback", "modal": true}' href="javascript:;" class="btn">Заказать</a></td>
 </tr>
 <tr>
-  <td>Professional</td>
-  <td>20$</td>
-  <td><a>Select</a></td>
+  <td>Чистка от влаги</td>
+  <td>20р</td>
+  <td><a data-fancybox data-options='{"src": "#popup_callback", "modal": true}' href="javascript:;" class="btn">Заказать</a></td>
 </tr>
 <tr>
-  <td>Premium</td>
-  <td>30$</td>
-  <td><a>Select</a></td>
+  <td>Замена экрана</td>
+  <td>30р</td>
+  <td><a data-fancybox data-options='{"src": "#popup_callback", "modal": true}' href="javascript:;" class="btn">Заказать</a></td>
 </tr>
 <tr>
-  <td>Platinum</td>
-  <td>60$</td>
-  <td><a>Select</a></td>
+  <td>Замена батареи</td>
+  <td>40р</td>
+  <td><a data-fancybox data-options='{"src": "#popup_callback", "modal": true}' href="javascript:;" class="btn">Заказать</a></td>
 </tr>
 </table>
 
@@ -369,7 +368,7 @@
 			<div class="common_block">
 				<div class="bg_skew4"></div>
 				<div class="bg_skew5"></div>
-				<section class="section_advantages" id="advantages">
+				<section name="advantages" class="section_advantages" id="advantages">
 					<div class="container">
 						<h2 class="section_title">Почему именно мы?</h2>
 						<div class="adv_list">
@@ -416,7 +415,7 @@
 							
 							
 							
-							<div class="adv_one col-md-3 col-sm-6">
+							<div class="adv_one">
 								<div class="icon">
 									<svg xmlns="http://www.w3.org/2000/svg" id="Clock_icon" viewBox="0 0 100 92.448486" width="59">
 										<g transform="translate(-63.710245,-72.150234)">
@@ -445,7 +444,7 @@
 							<div class="col-lg-4 col-md-4">
 								<div class="get_call">
 									<h3 class="small_title">Звоните и пишите</h3>
-									<div class="phone">+7 (495) 234-1234</div>
+									<div class="phone">+375 (25) 234-1234</div>
 									<div class="messengers">
 										<a href="#" title="Связаться по Viber" class="icon">
 											<svg id="Viber_icon2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 322 322" width="22" height="22">
@@ -570,7 +569,7 @@
 				</div>
 			</section> <!-- /.section_testimonials -->
 			<div class="container">
-				<section class="section_contacts" id="contacts">
+				<section name="contacts" class="section_contacts" id="contacts">
 					<div class="bg_skew6"></div>
 					<div class="contacts_content">
 						<h2 class="section_title">Контакты</h2>
@@ -818,6 +817,15 @@
     // this line ▼ prevents content scroll-behind
     $("body").toggleClass("locked"); 
 });
+	  
+$(".mobile-menu").click(function() { 
+	$("#navToggle").toggleClass("active");
+    $(".overlay").toggleClass("open");
+    // this line ▼ prevents content scroll-behind
+    $("body").toggleClass("locked");
+
+});
+      
 
 		</script>
 		
