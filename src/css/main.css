@@ -3386,6 +3386,9 @@ form button[type="submit"]:disabled:hover {
   margin: 0 auto;
 }
 
-
+.img_wrp{
+  display: flex;
+    justify-content: center;
+}
 /**************************** /RESPONSIVE ***********************/
 
